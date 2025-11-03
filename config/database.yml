@@ -39,3 +39,26 @@ production:
     <<: *default
     database: storage/production_cable.sqlite3
     migrations_paths: db/cable_migrate
+
+# default: &default
+#   adapter: mysql2
+#   encoding: utf8mb4
+#   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+#   username: root
+#   password: 1234
+#   host: localhost
+#   port: 3306
+
+# development:
+#   <<: *default
+#   database: yourapp_development
+
+# test:
+#   <<: *default
+#   database: yourapp_test
+
+# production:
+#   <<: *default
+#   database: yourapp_production
+#   username: your_production_user
+#   password: <%= ENV['YOURAPP_DATABASE_PASSWORD'] %>
